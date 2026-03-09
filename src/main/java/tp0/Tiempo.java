@@ -6,19 +6,19 @@ import java.util.Date;
 import java.util.Locale;
 
 public class Tiempo {
-    private Date fecha;
+    private Date unaFecha;
 
     public Tiempo() {
-        this.fecha = new Date();
+        this.unaFecha = new Date();
     }
 
     public String obtenerFechaLarga() {
         SimpleDateFormat formato = new SimpleDateFormat("EEEE d 'de' MMMM 'de' yyyy", Locale.getDefault());
-        return formato.format(fecha);
+        return formato.format(unaFecha);
     }
 
     public String obtenerFechaCorta() {
         SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy", Locale.getDefault());
-        return formato.format(fecha);
+        return formato.format(unaFecha);
     }
 }
