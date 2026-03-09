@@ -5,13 +5,13 @@ import java.time.format.DateTimeFormatter;
 
 public class MainAnemico {
     public static void main(String[] args) {
-        TiempoAnemico tiempo = new TiempoAnemico(LocalDate.now());
+        TiempoAnemico tiempoA = new TiempoAnemico(LocalDate.now());
 
         DateTimeFormatter formatoLargo = DateTimeFormatter.ofPattern("EEEE d 'de' MMMM 'de' yyyy");
-        System.out.println("Formato Largo: " + tiempo.getFecha().format(formatoLargo));
+        System.out.println("Formato Largo: " + tiempoA.getFecha().format(formatoLargo));
 
         DateTimeFormatter formatoCorto = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        System.out.println("Formato Corto: " + tiempo.getFecha().format(formatoCorto));
+        System.out.println("Formato Corto: " + tiempoA.getFecha().format(formatoCorto));
     }
 
 
